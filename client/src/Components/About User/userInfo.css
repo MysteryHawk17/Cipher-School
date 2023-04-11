@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400&display=swap");
+.userInfoContainer {
+  background: #f2f5fa;
+  padding: 2rem;
+}
+.aboutMe .topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.topRow .leftHeader {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #2c3d4f;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+.topRow .rightHeader {
+  align-items: center;
+  background: #f3912e;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  height: 28px;
+  justify-content: center;
+  outline: none;
+  transition: 0.15s ease;
+  width: 80px;
+}
+.bottomRow {
+  background: #fff;
+  border-radius: 8px;
+  box-sizing: initial;
+  display: flex;
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0.75rem;
+}
+.textArea {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgba(8, 15, 15, 0.75);
+  display: flex;
+  font-size: 14px;
+  font-weight: 550;
+  /* line-height: 1.5; */
+  overflow: hidden auto;
+  resize: none;
+  width: 100%;
+}
+.penIcon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.penIcon img {
+  height: 14px;
+  width: 14px !important;
+}
+.underLine {
+  background: rgba(10, 30, 50, 0.1);
+  border-radius: 0.5px;
+  height: 1px;
+  margin: 1.5rem 0 1rem;
+  width: 100%;
+}
+.onTheWeb .topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.linkBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px;
+  width: 100%;
+  margin-right: 10px;
+  padding: 0px 0px 10px 10px;
+  position: relative;
+}
+.uiTitle {
+  font-size: 15px;
+  color: #2c3d4f;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+.inputSec {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  margin-top: 4px;
+  padding: 0.5rem 1rem;
+}
+.linkImg {
+  padding-right: 5px;
+}
+.linkImg img {
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+}
+.linkText {
+  background: transparent;
+  border: none;
+  color: var(--paragraph);
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 1.5;
+  width: 100%;
+  outline: none;
+}
+
+.webPenIcon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.webPenIcon img {
+  height: 14px;
+  width: 14px !important;
+}
+.proInformation .topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.proBottomRow {
+  display: flex;
+  gap: 10px;
+}
+.opLink {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  position: relative;
+  width: 100%;
+}
+
+.opInputLink {
+  background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    margin-top: 4px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.close, .open {
+  transition: .1s ease-in-out;
+}
+
+.open {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.close {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.options {
+background-color: #fff;
+    border-radius: 8px;
+    box-shadow:0 0 12px rgba(10,30,50,.15);
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    margin-top: 5px;
+    padding: 5px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 10;
+}
+.option {
+  align-items: center;
+  border-radius: 5px;
+  color: rgba(8,15,15,.7);
+  cursor: pointer;
+  display: flex;
+  font-weight: 550;
+  height: 30px;
+  padding: 5px 10px;
+  transition: .15s ease;
+}
+.selectedOptions {
+  align-items: center;
+  border-radius: 5px;
+  color: rgba(8,15,15,.7);
+  cursor: pointer;
+  display: flex;
+  font-weight: 550;
+  height: 30px;
+  padding: 5px 10px;
+  transition: .15s ease;
+  background-color: #f3912e;
+}
+.passwordAndSec .topRow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputLink{
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  margin-top: 4px;
+  padding: 0.5rem 1rem;
+}
+.passwordText{
+  background:#fff;
+    border: none;
+    color: rgba(8, 15, 15, 0.75);
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 1.5;
+    width: 100%;
+}
+.interests{
+  margin-bottom: 2rem;
+}
+.interests .topRow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}

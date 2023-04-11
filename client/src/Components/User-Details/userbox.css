@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+.userInfoBox{
+    height: 110px;
+    padding-right: 67px;
+    position: static;
+    width: 100%;
+    
+}
+.back{
+    background-image: url('../../assets/Profile\ cover.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.content{
+    align-items: center;
+    background: linear-gradient(to right,#fff,transparent,#fff);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    gap: 1rem;
+    height: 100%;
+    justify-content: flex-start;
+    padding: 5px 40px;
+
+}
+.proBox{
+    display: flex;
+    flex-direction: column;
+}
+.avatarr{
+    
+    height: 70px!important;
+    width: 70px!important;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    font-size: 1.25rem;
+    align-items: center;
+    flex-shrink: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1;
+    user-select: none;
+    border-radius: 50%;
+    justify-content: center;
+    /* color: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    text-align: center;
+    text-indent: 10000px; */
+}
+.avatarr img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    text-indent: 10000px;
+}
+.profileInfo{
+    display: flex;
+    flex: 1 1;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+.detailBox{
+    display: flex;
+    flex: 1 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.greeting{
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    font-size: 17px;
+    font-weight: 400;
+    color: #2c3d4f;
+    line-height: 1.25;
+    padding: 0 5px;
+}
+.name{
+    cursor: pointer;
+    display: vertical;
+    font-size: 16px;
+    font-weight: var(--fw-bold);
+    margin-bottom: 2px;
+    overflow: hidden;
+    font-size: 24px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+.email{
+    color: #2c3d4f;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: 0 5px;
+    font-size: 16px;
+}
+.userPencil{
+    align-items: center;
+    background-color: #202b47;
+    border-radius: 100%;
+    top:9.2rem;
+    left: 3.2rem;
+    cursor: pointer;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    margin-left: 15px;
+    position: absolute;
+    width: 20px;
+}
+.userPencil svg{
+    display: flex;
+    width: 14px;
+    overflow: hidden;
+}
+.followerSide{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100px;
+    justify-content: center;
+    width: auto;
+}
+.fcount{
+    font-family: 'Open Sans';
+    color:#2c3d4f;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 550;
+    text-align: center;
+
+}
