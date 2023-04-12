@@ -2,7 +2,7 @@
     display: flex;
     padding: 1rem;
     align-items: center;
-    position: static;
+    background-color: #fff;
 }
 .navbar .title{
     font-size: 20px;
@@ -90,3 +90,33 @@
     font-size: 17px;
     color: #f3912e;
 }
+.searchRes{
+    display: none;
+}
+
+@media only screen  and (max-width:400px) {
+  .leftItem .title{
+    display: none;
+  }
+}
+@media only screen and (max-width:954px){
+  .searchRes{
+    display: block;
+ }
+ .cipherPoint,.avaImg,.navCount,.searchBox,.avatar,.but{
+    display: none;
+ }
+ .leftItem{
+    flex: 1;
+   
+ }
+ .navOptions{
+   margin-left: auto!important;
+   margin-right: 10px;
+ }
+ .rightItem{
+    flex: 0;
+ }
+ 
+}
+

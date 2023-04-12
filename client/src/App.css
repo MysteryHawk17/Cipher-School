@@ -3,7 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+*::selection{
+  background-color: #f3912e;
+  color: white;
+}
 .app {
   text-align: center;
 }
+.navbar{
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+
 

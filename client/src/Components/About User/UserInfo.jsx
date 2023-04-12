@@ -26,8 +26,8 @@ const LinkItem = ({ title, icon, placeholder, webEdit }) => {
                     disabled={!webEdit}
 
                 />
-            </div>
             {webEdit && <span className="webPenIcon"><img src={pen} alt="pencil" /></span>}
+            </div>
         </div>)
 }
 const EditInterest = ({ setIntEdit, IntersetArray }) => {
