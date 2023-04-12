@@ -31,6 +31,14 @@ Made the page responsive
 
 ![Responsive Profile Page-2](/screenshots/Responsive2.jpg)
 
+![User Following  Page-1](/screenshots/FollowingP1.jpg)
+
+![Responsive Following Page-2](/screenshots/FollowingP2.jpg)
+
+![Responsive Following Page-3](/screenshots/FollowingP3.jpg)
+
+![Responsive Following Page-4](/screenshots/FollowingP4.jpg)
+
 
 
 ## Improvments
