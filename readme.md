@@ -41,8 +41,4 @@ Made the page responsive
 
 
 
-## Improvments
- Provided the time, I would have completed the cipher map as well as the edit profile page.
-        This project has seperate backend and frontend which could have been integrated with the help of state management tool like redux toolkit.
-
 
