@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import eye from '../../assets/Eye.svg'
 import './changePass.css'
-const ChangePassword = ({setPassedit,passedit}) => {
+const ChangePassword = ({setPassedit}) => {
     const [cps, setCps] = useState(false)
     const [nps, setNps] = useState(false)
     const [cnps, setCnps] = useState(false)
     return (
-        <div className='cpContainer' style={{overflow:"hidden"}}>
+        <div className="cpp">
+        <div className='cpContainer'>
             <div className="inputBox">
                 <div className="iTitle">Current Password</div>
                 <div className="passwordInput">
@@ -33,6 +34,7 @@ const ChangePassword = ({setPassedit,passedit}) => {
             <div class="saveBtn">Save</div>
             </div>
 
+        </div>
         </div>
     )
 }

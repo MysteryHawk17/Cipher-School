@@ -1,0 +1,60 @@
+.interestEdit {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.418);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.opContainer{
+    width: 500px;
+    display: flex;
+    outline: none;
+    padding: 2rem;
+    position: absolute;
+    box-shadow: 0 0 12px rgba(10,30,50,.15);
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.interestContainer {
+    grid-gap: 15px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    max-height: 350px;
+    overflow: hidden auto;
+}
+.button{
+    color: rgba(8,15,15,.85);
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color:#f2f5fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.orangeButton{
+    color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color:#f3912e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

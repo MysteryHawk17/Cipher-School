@@ -1,0 +1,64 @@
+.fcardContainer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 10px;
+  height: 240px;
+  /* justify-content: space-between; */
+}
+.proImg img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.userInfo .name {
+  font-weight: 600;
+  display: flex;
+}
+.userInfo .cd {
+  font-size: 1rem;
+}
+.userInfo .followers {
+  font-size: 0.7rem;
+}
+.fButton {
+  margin-top: auto;
+  align-items: center;
+  background: #f3912e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  height: 30px;
+  justify-content: center;
+  outline: none;
+  width: 100%;
+  color: white;
+}
+.uButton {
+  margin-top: 2px;
+  align-items: center;
+  background: rgba(90, 103, 103, 0.85);
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  height: 30px;
+  justify-content: center;
+  outline: none;
+  width: 100%;
+  color: white;
+}

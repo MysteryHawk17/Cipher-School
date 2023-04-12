@@ -14,7 +14,7 @@
   font-size: 16px;
   color: #2c3d4f;
   font-family: "Open Sans", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
 }
 .topRow .rightHeader {
   align-items: center;
@@ -31,7 +31,7 @@
   transition: 0.15s ease;
   width: 80px;
 }
-.bottomRow {
+.aboutMe .bottomRow {
   background: #fff;
   border-radius: 8px;
   box-sizing: initial;
@@ -63,12 +63,25 @@
   height: 14px;
   width: 14px !important;
 }
+
+
+.react-calendar-heatmap {
+    margin-left: -23px;
+    margin-top: 10px;
+
+}
 .underLine {
   background: rgba(10, 30, 50, 0.1);
   border-radius: 0.5px;
   height: 1px;
   margin: 1.5rem 0 1rem;
   width: 100%;
+}
+.cipherMap .topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 .onTheWeb .topRow {
   display: flex;
@@ -100,6 +113,10 @@
   display: flex;
   margin-top: 4px;
   padding: 0.5rem 1rem;
+}
+.inputSec input::placeholder{
+  font-weight: 200;
+  opacity: 0.5;
 }
 .linkImg {
   padding-right: 5px;
@@ -233,4 +250,22 @@ background-color: #fff;
   justify-content: space-between;
   align-items: center;
 
+}
+.interests .bottomRow{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 1rem;
+
+}
+.interestBtn{
+  align-items: center;
+  background-color: rgba(243,145,46,.1);
+  border-radius: 6px;
+  color: #f3912e;
+  display: flex;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 8px 15px;
 }

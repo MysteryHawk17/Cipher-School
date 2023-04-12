@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './userInfo.css'
+import './editintrest.css'
 import pen from '../../assets/Pen.svg'
 import linkedInIcon from '../../assets/LinkedIn.svg'
 import githubIcon from '../../assets/Github.svg'
@@ -29,6 +30,46 @@ const LinkItem = ({ title, icon, placeholder, webEdit }) => {
             {webEdit && <span className="webPenIcon"><img src={pen} alt="pencil" /></span>}
         </div>)
 }
+const EditInterest = ({ setIntEdit, IntersetArray }) => {
+    const handleClick = (e,f) => {
+        console.log(e)
+        if(!IntersetArray.includes(e)){
+            f.target.classList.add('orangeButton')
+            IntersetArray.push(e);
+        }
+    }
+    const handleSave = () => {
+        setIntEdit(false)
+    }
+    const intrestOptions = [
+        'App Development',
+        'Web Development',
+        'Game Development',
+        'Data Structures',
+        'Programming',
+        'Machine Learning',
+        'Data Science',
+        'Others'
+    ]
+    return (
+        <div className='interestEdit'>
+
+            <div className="opContainer">
+                <div className="interestContainer">
+                    {intrestOptions.map((e,index) => {
+                        return (<div key={index} className={IntersetArray.includes(e)?"orangeButton":"button"} onClick={(f)=>handleClick(e,f)}>{e}</div>)
+                    })}
+                </div>
+                <div className="passBtn">
+                    <div class="cancelBtn" onClick={() => { setIntEdit(false) }}>Cancel</div>
+                    <div class="saveBtn" onClick={handleSave}>Save</div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const IntersetArray = [];
 const HighestEducation = [
     { title: "Primary" },
     { title: "Secondary" },
@@ -68,6 +109,10 @@ const UserInfo = () => {
     const [passedit, setPassedit] = useState(false)
     const handlePassEdit = () => {
         setPassedit(!passedit);
+    }
+    const [intrestEdit, setIntEdit] = useState(false);
+    const handleInterest = () => {
+        setIntEdit(!intrestEdit)
     }
     return (
         <div className='userInfoContainer'>
@@ -152,7 +197,7 @@ const UserInfo = () => {
                 <div className="topRow">
                     <div className="leftHeader">Password & Security</div>
                     <div className="rightHeader" onClick={handlePassEdit}>
-                        {passedit ? "Save" : "Edit"}
+                        Change
                     </div>
                 </div>
                 <div className="uiTitle">
@@ -168,12 +213,23 @@ const UserInfo = () => {
 
             </div>
             <div className="interests">
-            <div className="topRow">
+                <div className="topRow">
                     <div className="leftHeader">Interests</div>
-                    <div className="rightHeader" onClick={handlePassEdit}>
-                        {passedit ? "Save" : "Edit"}
+                    <div className="rightHeader" onClick={handleInterest}>
+                        {intrestEdit ? "Save" : "Edit"}
                     </div>
+
+
                 </div>
+                <div className="bottomRow">
+                    {IntersetArray.map((e) => {
+                        return (<div className="interestBtn">
+                            <span>{e}</span>
+                        </div>)
+                    })}
+
+                </div>
+                {intrestEdit && <EditInterest setIntEdit={setIntEdit} IntersetArray={IntersetArray} />}
             </div>
         </div>
 

@@ -2,7 +2,11 @@ import React from 'react'
 import './userbox.css'
 import { Avatar } from '@mui/material'
 import avaImg from '../../assets/avatar.png'
+import { useNavigate } from 'react-router-dom'
+
+
 const UserBox = () => {
+  const navigate=useNavigate();
   return (
     <div className='userInfoBox'>
       <div className="back">
@@ -25,7 +29,7 @@ const UserBox = () => {
                 <h2 className='email'>raj.yash1217@gmail.com</h2>
               </div>
               <div className="followerSide">
-                <div className="fcount">
+                <div className="fcount" onClick={()=>{navigate('/following')}}>
                   <span>0 </span>
                   Followers
                 </div>
@@ -34,9 +38,6 @@ const UserBox = () => {
           </div>
         </div>
       </div>
-
-
-
     </div>
   )
 }

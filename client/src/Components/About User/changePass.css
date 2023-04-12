@@ -1,20 +1,21 @@
+.cpp{
+  width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.418);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 .cpContainer {
   padding: 2rem;
   background: white;
   width: 40%;
   border-radius: 10px;
-  overflow: hidden;
-
-
-  /*hehe*/
-  position: relative;
-  z-index: 999;
-  top: -600px;
-  left: 400px;
-  -webkit-box-shadow: 32px -22px 163px 111px rgba(0,0,0,0.66);
-  -moz-box-shadow: 32px -22px 163px 111px rgba(0,0,0,0.66);
-  box-shadow: 32px -22px 163px 1110px rgba(0,0,0,0.66);
-  
 }
 .inputBox {
   flex-direction: column;

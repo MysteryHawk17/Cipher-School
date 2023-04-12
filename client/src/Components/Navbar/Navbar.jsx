@@ -8,7 +8,15 @@ import avaImg from '../../assets/avatar.png'
 import point from '../../assets/watch-point.svg'
 import './navbar.css'
 import { Avatar } from '@mui/material';
-
+const intrestOptions=[
+    'App Development',
+    'Web Development',
+    'Game Development',
+    'Programming',
+    'Machine Learning',
+    'Data Science',
+    'Others'
+  ]
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [popen, setpOpen] = useState(false);
@@ -46,19 +54,14 @@ const Navbar = () => {
                         MenuListProps={{
                             'aria-labelledby': 'fade-button',
                         }}
-                        sx={{ position: "absolute", left: "17rem", top: "-15px", borderRadius: "10px", fontSize: "15px" }}
+                        sx={{ position: "absolute", left: "17rem", top: "-26rem", borderRadius: "10px", fontSize: "15px" }}
                         open={open}
                         onClose={handleClose}
                         TransitionComponent={Fade}
                     >
-                        <MenuItem className='menuitem' onClick={handleClose}>App Development</MenuItem>
-                        <MenuItem className='menuitem' onClick={handleClose}>Web Development</MenuItem>
-                        <MenuItem className='menuitem' onClick={handleClose}>Game Development</MenuItem>
-                        <MenuItem className='menuitem' onClick={handleClose}>Data Structures</MenuItem>
-                        <MenuItem className='menuitem' onClick={handleClose}>Programming</MenuItem>
-                        <MenuItem className='menuitem' onClick={handleClose}>Machine Learing</MenuItem>
-                        <MenuItem className='menuitem' onClick={handleClose}>Data Science</MenuItem>
-                        <MenuItem className='menuitem' onClick={handleClose}>Other</MenuItem>
+                        {intrestOptions.map((e)=>{
+                            return(<MenuItem className='menuitem' onClick={handleClose}>{e}</MenuItem>)
+                        })}
                     </Menu>
                 </div>
             </div>
@@ -85,7 +88,7 @@ const Navbar = () => {
                         MenuListProps={{
                             'aria-labelledby': 'fade-button',
                         }}
-                        sx={{ position: "absolute", left: "81rem", top: "-15px", borderRadius: "10px", fontSize: "15px" }}
+                        sx={{ position: "absolute", left: "81rem", top: "-30rem", borderRadius: "10px", fontSize: "15px" }}
                         open={popen}
                         onClose={handleProfileClose}
                         TransitionComponent={Fade}
@@ -96,14 +99,10 @@ const Navbar = () => {
                         <MenuItem onClick={handleProfileClose}>Wishlist</MenuItem>
                         <MenuItem onClick={handleProfileClose}>Liked Videos</MenuItem>
                     </Menu>
-
-
-                
-                <div className="cipherPoint">
+                     <div className="cipherPoint">
                     <img style={{ height: "18px", width: "18px", borderRadius: "100%" }} src={point} alt="" />
                     <span className='point'>0</span>
                 </div>
-
             </div>
         </div>
     )

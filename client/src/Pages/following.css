@@ -1,0 +1,13 @@
+.fContainer{
+    padding: 2rem;
+    background-color: #f2f5fa;
+  
+}
+.pageTitle{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.users{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 
+}
