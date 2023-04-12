@@ -47,9 +47,9 @@
   color: white;
 }
 .uButton {
-  margin-top: 2px;
+  margin-top: auto;
   align-items: center;
-  background: rgba(90, 103, 103, 0.85);
+  background: rgba(150, 156, 156, 0.85);
   border: none;
   border-radius: 5px;
 

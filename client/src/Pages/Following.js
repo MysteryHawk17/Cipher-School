@@ -14,7 +14,7 @@ const Following = () => {
             <h2 className='pageTitle'>Users Following You</h2>
             <div className="users" style={{marginTop:"1rem"}}>
               {followersArray.map((e,index)=>{
-                return(<FollowingCard key={index} avtImg={e.avtImg} fName={e.fName} lName={e.lName} currentlyPersuing={e.currentlyPersuing} followersCount={e.followersCount} />)
+                return(<FollowingCard key={index} avtImg={e.avtImg} fName={e.fName} lName={e.lName} isFollowing={e.isFollowing} currentlyPersuing={e.currentlyPersuing} followersCount={e.followersCount} />)
               })}
               
             </div>
